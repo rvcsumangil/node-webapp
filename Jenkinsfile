@@ -10,8 +10,6 @@ pipeline {
           def customImage = docker.build("my-image")
           customImage.push()
         }
-#        sh 'docker build -t rsumangil/node-webapp:latest . '
-#        sh 'docker push rsumangil/node-webapp:latest '
       }
     }
     stage ('Deploy') {
